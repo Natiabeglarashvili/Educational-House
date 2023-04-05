@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational House</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head> 
+<header> 
+         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&display=swap');
+            </style>
+        <div class="name">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="./images/1logo.png" alt="#">
+                </a>
+            </div>
+            <div id="landing"> 
+                <h2>საგანმანათლებლო სახლი </h2>
+                <h1> Educational House</h1>
+            </div>
+        </div>
+                <nav>
+                     <a href="aboutus.html">ჩვენ შესახებ</a>
+                     <a href="news.html">სიახლეები</a>
+                     <a href="courses.html">კურსები</a>
+                     <a href="partners.html">პარტნიორები</a>
+                     <a href="contact.html">კონტაქტი</a>
+                </nav>
+</header>
+<body>
+    <div class="main">
+      <div class="slider">
+        <img id="slider" src="images/img1.jpg" alt="image"/>
+        
+        <div class="btn">
+            <button onclick="back()"class="caroucel-button prev">&#8656;</button>
+            <button onclick="next()"class="caroucel-button next">&#8658;</button>
+        </div>
+      </div>
+    </div>
+    <!--js code-->
+    <script>
+       var sliderimg=document.getElementById("slider");
+       var images = ["images/img1.jpg","images/img2.jpg","images/img3.jpg","images/img4.png","images/img5.jpg"];
+       var num=0;
+       function next (){
+         num++;
+         if(num>=images.length){
+            num=0;
+            sliderimg.src=images[num]
+         }else{
+            sliderimg.src=images[num]
+         }
+       };
+       function back (){
+         num--;
+         if(num<0){
+            num=images.length -1;
+            sliderimg.src=images[num]
+         } else{
+            sliderimg.src-images[num]
+         }
+       }
+    </script>
+
+<div class="container-courses">
+  <div class="programireba">
+       <img src="./images/course/itdevelopment.jpg" alt="#" >
+      <h3>ვებ დეველოპმენტი</h3>
+       <p>XHTML / CSS 
+       HTML4 - შესავალი , ტექსტთან მუშაობა;
+       სათაურები, ბმულები, სურათები;
+       სიები და ცხრილები;
+       ფორმები;
+       ვიდეო და ხმოვანი ფაილების განთავსება;
+       საიტის გაფორმება და ოპტიმაზიცია, CSS საფუძვლები;
+       ტექსტთან მუშაობა ჩაშენებული (online) სტილის გამოყენებით;
+       გარე (external) სტილის ჩაწერის მეთოდები. სელექტორები;
+       ჩარჩოები და სიები;
+       ბლოკები;
+       ფონი, ცხრილები და ფორმები;
+       ელემენტების სწორება და პოზიციონირება;
+       პოზიციები;
+       <br><br>
+       კურსის ხანგრძლივობა - 15 ლექცია
+       <br>
+       კურსის ღირებულება:
+       ინდივიდუალურად - 250 ლარი
+       ორ-სამ კაციან ჯგუფში - 220 ლარი 
+       ჯგუფში – ერთი მსმენელისთვის – 190 ლარი</p>
+   </div>
+   <div class="bugalteria">
+       <img src="./images/course/bugalteria (1).jpg" alt="#">
+       <h3>ბუღალტერია</h3>
+       <p>პრაქტიკული ბუღალტერია RS.GE
+           ზედნადების ატვირთვა, კორექტირება, კოპირება, გაუქმება,
+           ზედანდების შევსების დროს ინფორმაციის ექსელიდან იმპორტი და ექსელში ექსპორტი,
+           მიღებული და გაცემული ანგარიშ-ფაქტურები,
+           გადასახდელი საშემოსავლო გადასახადის დაანგარიშება ხელფასებიდან და საშემოსავლო დეკლარაციის შევსება,
+           საპენსიო დეკლარაციის შევსება,
+           ქონების გადასახადის დეკლარაციის შევსება,
+           დღგ-ს დეკლარაციის შევსება,
+           მოგების გადასახადის დეკლარაციის შევსება (ესტონური მოდელი)
+           მცირე მეწარმის საშემოსავლო გადასახადის დეკლარაციის შევსება.
+          <br><br>
+          კურსის ხანგრძლივობა - 20 ლექცია
+          <br>
+          კურსის ღირებულება:
+          ინდივიდუალურად - 400 ლარი
+          ორ-სამ კაციან ჯგუფში - 220 ლარი</p>
+       </div>
+       <div class="marketing">
+         <img src="./images/course/marketingi.jpg" alt="#">
+         <h3>ციფრული მარკეტინგი</h3>
+         <p>შესავალი ციფრულ მარკეტინგში,სოციალური მედია,Paid Search (PPC), Google Ads – ის გამოყენებით,იმეილ და სმს მარკეტინგი, 
+         კომუნიკაციების ავტომატიზაცია,კონტენტ მარკეტინგი,დისფლეი და ვიდეო რეკლამა, Google Display Network,ციფრული მარკეტინგის სტრატეგია
+         <br><br>
+          კურსის ხანგრძლივობა - 20 ლექცია
+          <br>
+          კურსის ღირებულება:
+          ინდივიდუალურად - 500 ლარი
+          ორ-სამ კაციან ჯგუფში - 320 ლარი</p>
+       </div>
+</div>
+
+
+   <div class="partner">
+     <h1>პარტნიორები</h1>
+       <img src="./images/im11.jpg" alt=""> 
+       <img src="./images/im22.jpg" alt=""> 
+       <img src="./images/im33.jpg" alt=""> 
+       <img src="./images/im44.jpg" alt=""> 
+   </div>
+</body>
+    <footer class="footer">
+        <p>  <a href="#">EH საგანმანათლებლო სახლი </a> </p>
+        <P>  <a href="#" >ehouse@gmail.com </a> </P>
+        <p>  <a href="#"> ტელ: 032 340 20 20;  </a> </p>
+        <p>  <a href="#"> ქ. თბილისი, ვაკე ქავთარაძის 11 </a> </p>
+    </footer>
+</html>
