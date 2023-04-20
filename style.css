@@ -28,7 +28,7 @@ display: flex;
    }
    img {
       width: 50px;
-      margin-left: -40px;
+      margin-left: -30px;
    }
 }
 
@@ -85,7 +85,7 @@ margin-left: 50px;
     nav a{
       font-size: 20px;
       display: block;
-      margin: 20px;
+      margin: 15px;
     }
     
 }
@@ -244,14 +244,6 @@ align-items: center;
 }
 
 
-
-
-
-
-
-
-
-
 /*partners*/
 
 .partners h1 {
@@ -299,7 +291,7 @@ width: 70px;
 height: 70px;
 border-radius: 20px;
 margin-top: 40px;
-margin-left: 40px;
+margin-left: 20px;
 cursor: pointer;
 }
 
@@ -310,8 +302,8 @@ transform: scale(1.1);
 
 @media (max-width: 700px){
    .contact img{
-      width: 70px;
-      height: 70px;
+      width: 57px;
+      height: 57px;
    }
    .contact p{
       font-size: medium;
@@ -354,10 +346,22 @@ margin-left: -1px;
       display: block;
    }
    .container-courses img {
-      width: 355px;
+      width: 360px;
    }
    .container-courses p{
       font-size: 15px;
+   }
+}
+
+@media (max-width:390px){
+   .container-courses img {
+      width: 336px;
+   }
+}
+
+@media (max-width:375px){
+   .container-courses img {
+      width: 322px;
    }
 }
 
